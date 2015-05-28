@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UICollectionViewController
+
+@property (nonatomic,strong) NSMutableDictionary *movies;
 
 
 @end
