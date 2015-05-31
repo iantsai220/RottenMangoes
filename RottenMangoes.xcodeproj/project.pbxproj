@@ -19,6 +19,14 @@
 		96B448631B166A5B000154CB /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B448621B166A5B000154CB /* MovieCell.m */; };
 		96B448661B169911000154CB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B448651B169911000154CB /* DetailViewController.m */; };
 		96B448691B16BC1A000154CB /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B448681B16BC1A000154CB /* Review.m */; };
+		96B4486B1B178F6F000154CB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4486A1B178F6F000154CB /* MapKit.framework */; };
+		96B4486D1B178F7A000154CB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4486C1B178F7A000154CB /* CoreLocation.framework */; };
+		96B4486F1B17B1FD000154CB /* location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 96B4486E1B17B1FD000154CB /* location.gpx */; };
+		96B448721B17DC80000154CB /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B448711B17DC80000154CB /* Theater.m */; };
+		96B448781B18E80D000154CB /* cineplex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B448741B18E80D000154CB /* cineplex.jpg */; };
+		96B448791B18E80D000154CB /* landmark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B448751B18E80D000154CB /* landmark.jpg */; };
+		96B4487A1B18E80D000154CB /* scotiabank.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B448761B18E80D000154CB /* scotiabank.png */; };
+		96B4487B1B18E80D000154CB /* silvercity.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B448771B18E80D000154CB /* silvercity.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,15 @@
 		96B448651B169911000154CB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		96B448671B16BC1A000154CB /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
 		96B448681B16BC1A000154CB /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		96B4486A1B178F6F000154CB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		96B4486C1B178F7A000154CB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		96B4486E1B17B1FD000154CB /* location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = location.gpx; sourceTree = "<group>"; };
+		96B448701B17DC80000154CB /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
+		96B448711B17DC80000154CB /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
+		96B448741B18E80D000154CB /* cineplex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cineplex.jpg; sourceTree = "<group>"; };
+		96B448751B18E80D000154CB /* landmark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landmark.jpg; sourceTree = "<group>"; };
+		96B448761B18E80D000154CB /* scotiabank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scotiabank.png; sourceTree = "<group>"; };
+		96B448771B18E80D000154CB /* silvercity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silvercity.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B4486D1B178F7A000154CB /* CoreLocation.framework in Frameworks */,
+				96B4486B1B178F6F000154CB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +97,8 @@
 		96B448291B164897000154CB = {
 			isa = PBXGroup;
 			children = (
+				96B4486C1B178F7A000154CB /* CoreLocation.framework */,
+				96B4486A1B178F6F000154CB /* MapKit.framework */,
 				96B448341B164897000154CB /* RottenMangoes */,
 				96B4484E1B164897000154CB /* RottenMangoesTests */,
 				96B448331B164897000154CB /* Products */,
@@ -96,6 +117,7 @@
 		96B448341B164897000154CB /* RottenMangoes */ = {
 			isa = PBXGroup;
 			children = (
+				96B448731B18DF09000154CB /* Image */,
 				96B448391B164897000154CB /* AppDelegate.h */,
 				96B4483A1B164897000154CB /* AppDelegate.m */,
 				96B4483C1B164897000154CB /* ViewController.h */,
@@ -108,11 +130,14 @@
 				96B448621B166A5B000154CB /* MovieCell.m */,
 				96B4485B1B1648AF000154CB /* Movie.h */,
 				96B4485C1B1648AF000154CB /* Movie.m */,
+				96B448701B17DC80000154CB /* Theater.h */,
+				96B448711B17DC80000154CB /* Theater.m */,
 				96B448671B16BC1A000154CB /* Review.h */,
 				96B448681B16BC1A000154CB /* Review.m */,
 				96B4483F1B164897000154CB /* Main.storyboard */,
 				96B448421B164897000154CB /* Images.xcassets */,
 				96B448441B164897000154CB /* LaunchScreen.xib */,
+				96B4486E1B17B1FD000154CB /* location.gpx */,
 				96B448351B164897000154CB /* Supporting Files */,
 			);
 			path = RottenMangoes;
@@ -142,6 +167,17 @@
 				96B448501B164897000154CB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96B448731B18DF09000154CB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				96B448741B18E80D000154CB /* cineplex.jpg */,
+				96B448751B18E80D000154CB /* landmark.jpg */,
+				96B448761B18E80D000154CB /* scotiabank.png */,
+				96B448771B18E80D000154CB /* silvercity.png */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +229,7 @@
 				TargetAttributes = {
 					96B448311B164897000154CB = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 7AFA62244H;
 					};
 					96B4484A1B164897000154CB = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -226,7 +263,12 @@
 			files = (
 				96B448411B164897000154CB /* Main.storyboard in Resources */,
 				96B448461B164897000154CB /* LaunchScreen.xib in Resources */,
+				96B4486F1B17B1FD000154CB /* location.gpx in Resources */,
+				96B448791B18E80D000154CB /* landmark.jpg in Resources */,
+				96B448781B18E80D000154CB /* cineplex.jpg in Resources */,
 				96B448431B164897000154CB /* Images.xcassets in Resources */,
+				96B4487A1B18E80D000154CB /* scotiabank.png in Resources */,
+				96B4487B1B18E80D000154CB /* silvercity.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +292,7 @@
 				96B4483B1B164897000154CB /* AppDelegate.m in Sources */,
 				96B4485D1B1648AF000154CB /* Movie.m in Sources */,
 				96B448691B16BC1A000154CB /* Review.m in Sources */,
+				96B448721B17DC80000154CB /* Theater.m in Sources */,
 				96B448381B164897000154CB /* main.m in Sources */,
 				96B448661B169911000154CB /* DetailViewController.m in Sources */,
 			);
@@ -377,9 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RottenMangoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -387,9 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RottenMangoes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UICollectionViewController
+@interface ViewController : UIViewController
 
-@property (nonatomic,strong) NSMutableDictionary *movies;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
+@property (nonatomic, strong) NSMutableArray *theaterArray;
+
 
 
 @end

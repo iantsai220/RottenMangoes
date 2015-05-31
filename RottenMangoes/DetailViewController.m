@@ -25,8 +25,6 @@
     if (_movieItem != movie) {
         _movieItem = movie;
         
-        
-        
         // Update the view.
         [self configureView];
     }
@@ -38,9 +36,6 @@
     
     
     if (self.movieItem) {
-        
-        
-        
         
         self.titleLabel.text = self.movieItem.title;
         self.detailLabel.text = self.movieItem.detail;
@@ -65,7 +60,6 @@
         NSMutableArray *tempArray = [[NSMutableArray alloc] init];
         
         NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-        
         
         self.reviews = [dataDictionary valueForKeyPath:@"reviews"];
         
@@ -100,14 +94,19 @@
 
 
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"showTheater"]) {
+        [[segue destinationViewController] setMovieItem:self.movieItem];
+    }
+    
+    
 }
-*/
+
 
 @end
